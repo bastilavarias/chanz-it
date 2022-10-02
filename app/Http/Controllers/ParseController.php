@@ -9,17 +9,17 @@ class ParseController extends Controller
     public function toNumber(Request $request)
     {
         $words = $request->input('words');
-        //        $fuzzyResult = $this->fuzzy($words);
-        //        if ($fuzzyResult['error']) {
-        //            return customResponse()
-        //                ->data([
-        //                    'type' => 'typo_words',
-        //                    'suggestion' => $fuzzyResult['suggestion'],
-        //                ])
-        //                ->message("Do you mean {$fuzzyResult['suggestion']}?")
-        //                ->failed()
-        //                ->generate();
-        //        }
+        $fuzzyResult = $this->fuzzy($words);
+        if ($fuzzyResult['error']) {
+            return customResponse()
+                ->data([
+                    'type' => 'typo_words',
+                    'suggestion' => $fuzzyResult['suggestion'],
+                ])
+                ->message("Do you mean {$fuzzyResult['suggestion']}?")
+                ->failed()
+                ->generate();
+        }
         $number = $this->wordsToNumbers($words);
         if ($number <= 0) {
             return customResponse()
