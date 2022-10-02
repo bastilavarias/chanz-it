@@ -21,12 +21,12 @@
       "assets/Home.348fe337.css"
     ]
   },
-  "resources/js/app.css": {
-    "file": "assets/app.0b02996c.css",
-    "src": "resources/js/app.css"
-  },
   "resources/js/Pages/Home.css": {
     "file": "assets/Home.348fe337.css",
     "src": "resources/js/Pages/Home.css"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app.0b02996c.css",
+    "src": "resources/js/app.css"
   }
 }
