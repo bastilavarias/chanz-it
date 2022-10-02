@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title inertia>{{ config('app.name', 'Laravel') }}</title>
+        <title inertia>CHANZ IT - Sebastian Curtis Lavarias</title>
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700,900&display=swap" />
 
